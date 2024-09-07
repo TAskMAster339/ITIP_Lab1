@@ -2,12 +2,12 @@ public class Palindrome {
     public static void main(String[] args) {
         for (int i = 0; i < args.length; ++i) {
             String str = args[i];
-            if (isPolindrome(str)) {
+            if (isPalindrome(str)) {
                 System.out.println(str);
             }
         }
     }
-    public static boolean isPolindrome(String str) {
+    public static boolean isPalindrome(String str) {
         return str.equals(reverseString(str));
     }
     public static String reverseString(String str){
